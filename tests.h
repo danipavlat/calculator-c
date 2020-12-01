@@ -1,0 +1,2 @@
+void testAddition();
+void runTests();
