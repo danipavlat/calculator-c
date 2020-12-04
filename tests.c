@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// basic tests verify operations work as intended
 void testAddition() {
     int a = 2;
     int b = 3;
