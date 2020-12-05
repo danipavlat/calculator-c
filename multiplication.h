@@ -1,0 +1,1 @@
+int multiplication(int, int);

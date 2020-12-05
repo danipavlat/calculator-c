@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "operations.h"
+#include "addition.h"
+#include "subtraction.h"
+#include "multiplication.h"
+#include "division.h"
+#include "modulo.h"
 #include "tests.h"
 
 void help() {
