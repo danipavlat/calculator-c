@@ -32,6 +32,21 @@ void testSubtraction() {
     return;
 }
 
+void testDoubleNegative() {
+    int a = -2;
+    int b = -4;
+    int difference = 2;
+
+    int response = subtraction(a, b);
+
+    if (difference != response) {
+        fprintf(stderr, "testDoubleNegative has failed!\n actual %d expected %d", response, difference);
+        exit(1);
+    }
+
+    return;
+}
+
 void testMultiplication() {
     int a = 1;
     int b = 3;
@@ -76,10 +91,26 @@ void testModulo() {
     return;
 }
 
+void testModuloZero() {
+    int a = 5;
+    int b = 0;
+    int remainder = 5;
+
+    int response = modulo(a, b);
+    if (remainder != response) {
+        fprintf(stderr, "testModuloZero has failed!\n actual: %d expected: %d", response, remainder);
+        exit(1);
+    }
+
+    return;
+}
+
 void runTests() {
     testAddition();
     testSubtraction();
+    testDoubleNegative();
     testMultiplication();
     testDivision();
     testModulo();
+    testModuloZero();
 }

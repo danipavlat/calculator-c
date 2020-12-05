@@ -90,7 +90,7 @@ int main(int argc, char** argv) {
         case 'a':
             a = getInput('a');
             b = getInput('b');
-            result = addition(a,b);
+            result = addition(a, b);
             printf("%d + %d = %d", a, b, result);
             break;
         case 'S':
@@ -104,21 +104,21 @@ int main(int argc, char** argv) {
         case 'm':
             a = getInput('a');
             b = getInput('b');
-            result = multiplication(a,b);
+            result = multiplication(a, b);
             printf("%d * %d = %d", a, b, result);
             break;
         case 'D':
         case 'd':
             a = getInput('a');
             b = checkValidDivisor();
-            result = division(a,b);
+            result = division(a, b);
             printf("%d / %d = %d", a, b, result);
             break;
         case 'R':
         case 'r':
             a = getInput('a');
             b = getInput('b');
-            result = modulo(a,b);
+            result = modulo(a, b);
             printf("%d %% %d = %d", a, b, result);
             break;
         default:

@@ -4,7 +4,7 @@ int addition(int a, int b) {
 }
 
 int subtraction(int a, int b) {
-    return a - b;
+    return a - (b);
 }
 
 int multiplication(int a, int b) {
@@ -16,5 +16,9 @@ int division(int a, int b) {
 }
 
 int modulo(int a, int b) {
-    return a % b;
+    if (b == 0) {
+        return a;
+    } else {
+        return a % b;
+    }
 }
